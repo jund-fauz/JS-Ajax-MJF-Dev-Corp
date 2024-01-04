@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai MJF Company</title>
+    <style>
+        :root {
+            --table-padding: 2vw;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 8px var(--table-padding);
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            :root {
+                --table-padding: 1vw;
+            }
+        }
+
+        @media (min-width: 900px) {
+            :root {
+                --table-padding: 3vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <th>Id</th>
+            <th>Nama Lengkap</th>
+            <th>Jabatan</th>
+            <th>Gaji</th>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
